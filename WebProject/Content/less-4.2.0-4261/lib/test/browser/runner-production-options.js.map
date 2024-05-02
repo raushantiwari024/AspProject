@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-production-options.js","sourceRoot":"","sources":["../../../test/browser/runner-production-options.js"],"names":[],"mappings":"AAAA,IAAI,IAAI,GAAG,EAAC,QAAQ,EAAE,CAAC;IACnB,cAAc,EAAE,SAAS,EAAC,CAAC;AAC/B,IAAI,CAAC,GAAG,GAAG,YAAY,CAAC","sourcesContent":["var less = {logLevel: 1,\n    errorReporting: 'console'};\nless.env = 'production';\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-strict-units-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-strict-units-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,4BAA4B,EAAE;IACnC,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js strict units tests', function() {\n    testLessEqualsInDocument();\n});\n"]}

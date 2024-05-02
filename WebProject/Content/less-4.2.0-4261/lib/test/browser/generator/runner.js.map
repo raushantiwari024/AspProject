@@ -1,0 +1,1 @@
+{"version":3,"file":"runner.js","sourceRoot":"","sources":["../../../../test/browser/generator/runner.js"],"names":[],"mappings":"AAAA,IAAM,MAAM,GAAG,OAAO,CAAC,YAAY,CAAC,CAAA;AACpC,MAAM,EAAE,CAAA","sourcesContent":["const runner = require('./generate')\nrunner()"]}

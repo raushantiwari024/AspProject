@@ -1,0 +1,1 @@
+{"version":3,"file":"plugin.js","sourceRoot":"","sources":["../../../../../test/browser/less/plugin/plugin.js"],"names":[],"mappings":"AACA,SAAS,CAAC,GAAG,CAAC,MAAM,EAAE;IAClB,OAAO,IAAI,CAAC,SAAS,CAAC,QAAQ,CAAC,IAAI,CAAC,CAAC;AACzC,CAAC,CAAC,CAAC","sourcesContent":["\nfunctions.add('func', function() {\n    return less.anonymous(location.href);\n});\n"]}

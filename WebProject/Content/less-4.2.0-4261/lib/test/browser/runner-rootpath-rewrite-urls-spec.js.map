@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-rootpath-rewrite-urls-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-rootpath-rewrite-urls-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,kDAAkD,EAAE;IACzD,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js browser test - rootpath and rewrite urls', function() {\n    testLessEqualsInDocument();\n});\n"]}

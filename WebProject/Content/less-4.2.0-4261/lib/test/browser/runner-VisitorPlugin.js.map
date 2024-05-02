@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-VisitorPlugin.js","sourceRoot":"","sources":["../../../test/browser/runner-VisitorPlugin.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,wBAAwB,EAAE;IAC/B,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js Visitor Plugin', function() {\n    testLessEqualsInDocument();\n});\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-modify-vars-options.js","sourceRoot":"","sources":["../../../test/browser/runner-modify-vars-options.js"],"names":[],"mappings":"AAAA,mBAAmB;AACnB,IAAI,IAAI,GAAG;IACP,QAAQ,EAAE,CAAC;IACX,cAAc,EAAE,SAAS;CAC5B,CAAC","sourcesContent":["/* exported less */\nvar less = {\n    logLevel: 4,\n    errorReporting: 'console'\n};"]}

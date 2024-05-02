@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-preProcessorPlugin.js","sourceRoot":"","sources":["../../../test/browser/runner-preProcessorPlugin.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,6BAA6B,EAAE;IACpC,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js preProcessor Plugin', function() {\n    testLessEqualsInDocument();\n});\n"]}

@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-rewrite-urls-options.js","sourceRoot":"","sources":["../../../test/browser/runner-rewrite-urls-options.js"],"names":[],"mappings":"AAAA,IAAI,IAAI,GAAG,EAAC,QAAQ,EAAE,CAAC;IACnB,cAAc,EAAE,SAAS,EAAC,CAAC;AAC/B,IAAI,CAAC,WAAW,GAAG,KAAK,CAAC","sourcesContent":["var less = {logLevel: 4,\n    errorReporting: 'console'};\nless.rewriteUrls = 'all';\n"]}

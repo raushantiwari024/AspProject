@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-rootpath-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-rootpath-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,wCAAwC,EAAE;IAC/C,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js browser test - rootpath url\\'s', function() {\n    testLessEqualsInDocument();\n});\n"]}

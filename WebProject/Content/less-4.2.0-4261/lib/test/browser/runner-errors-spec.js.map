@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-errors-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-errors-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,qBAAqB,EAAE;IAC5B,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js error tests', function() {\n    testLessErrorsInDocument();\n});\n"]}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "less-4.2.0-4261@4.2.0",
+      "destination": "Content/less-4.2.0-4261/"
+    },
+    {
+      "library": "bootstrap@5.1.0",
+      "destination": "Content/bootstrap/"
+    }
+  ]
+}

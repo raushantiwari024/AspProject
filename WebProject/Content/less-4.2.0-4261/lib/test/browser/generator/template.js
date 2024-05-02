@@ -1,0 +1,26 @@
+var tslib_1 = require("tslib");
+var html = require('html-template-tag');
+var path = require('path');
+var forceCovertToBrowserPath = require('./utils').forceCovertToBrowserPath;
+var webRoot = path.resolve(__dirname, '../../../../../');
+var mochaDir = forceCovertToBrowserPath(path.relative(webRoot, path.dirname(require.resolve('mocha'))));
+var chaiDir = forceCovertToBrowserPath(path.relative(webRoot, path.dirname(require.resolve('chai'))));
+var mochaTeamCityDir = forceCovertToBrowserPath(path.relative(webRoot, path.dirname(require.resolve('mocha-teamcity-reporter'))));
+/**
+ * Generates HTML templates from list of test sheets
+ */
+module.exports = function (stylesheets, helpers, spec, less) {
+    if (!Array.isArray(helpers)) {
+        helpers = [helpers];
+    }
+    return html(tslib_1.__makeTemplateObject(["\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    \n    <title>Less.js Spec Runner</title>\n\n    <!-- for each test, generate CSS/LESS link tags -->\n    $", "\n\n    $", "\n\n    <link rel=\"stylesheet\" href=\"/", "/mocha.css\">\n</head>\n\n<body>\n    <!-- content -->\n    <div id=\"mocha\"></div>\n    <script src=\"/", "/mocha.js\"></script>\n    <script src=\"/", "/teamcityBrowser.js\"></script>\n    <script src=\"/", "/chai.js\"></script>\n    <script>\n        expect = chai.expect\n        mocha.setup({\n            ui: 'bdd',\n            timeout: 2500\n        });\n    </script>\n    <script src=\"common.js\"></script>\n    <script src=\"../../", "\"></script>\n    <script src=\"", "\"></script>\n    <script>\n        /** Saucelabs config */\n        onload = function() {\n            var runner = mocha.run();\n\n            var failedTests = [];\n            runner.on('end', function() {\n                window.mochaResults = runner.stats;\n                window.mochaResults.reports = failedTests;\n            });\n\n            runner.on('fail', logFailure);\n\n            function logFailure(test, err){\n                var flattenTitles = function(test){\n                    var titles = [];\n                    while (test.parent.title) {\n                        titles.push(test.parent.title);\n                        test = test.parent;\n                    }\n                    return titles.reverse();\n                };\n\n                failedTests.push({name: test.title, result: false, message: err.message, stack: err.stack, titles: flattenTitles(test) });\n            };\n        };\n        \n    </script>\n</body>\n</html>\n"], ["\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    \n    <title>Less.js Spec Runner</title>\n\n    <!-- for each test, generate CSS/LESS link tags -->\n    $", "\n\n    $", "\n\n    <link rel=\"stylesheet\" href=\"/", "/mocha.css\">\n</head>\n\n<body>\n    <!-- content -->\n    <div id=\"mocha\"></div>\n    <script src=\"/", "/mocha.js\"></script>\n    <script src=\"/", "/teamcityBrowser.js\"></script>\n    <script src=\"/", "/chai.js\"></script>\n    <script>\n        expect = chai.expect\n        mocha.setup({\n            ui: 'bdd',\n            timeout: 2500\n        });\n    </script>\n    <script src=\"common.js\"></script>\n    <script src=\"../../", "\"></script>\n    <script src=\"", "\"></script>\n    <script>\n        /** Saucelabs config */\n        onload = function() {\n            var runner = mocha.run();\n\n            var failedTests = [];\n            runner.on('end', function() {\n                window.mochaResults = runner.stats;\n                window.mochaResults.reports = failedTests;\n            });\n\n            runner.on('fail', logFailure);\n\n            function logFailure(test, err){\n                var flattenTitles = function(test){\n                    var titles = [];\n                    while (test.parent.title) {\n                        titles.push(test.parent.title);\n                        test = test.parent;\n                    }\n                    return titles.reverse();\n                };\n\n                failedTests.push({name: test.title, result: false, message: err.message, stack: err.stack, titles: flattenTitles(test) });\n            };\n        };\n        \n    </script>\n</body>\n</html>\n"]), stylesheets.map(function (fullLessName) {
+        var pathParts = fullLessName.split('/');
+        var fullCssName = fullLessName
+            .replace(/\/(browser|test-data)\/less\//g, '/$1/css/')
+            .replace(/less$/, 'css');
+        var lessName = pathParts[pathParts.length - 1];
+        var name = lessName.split('.')[0];
+        return "\n    <!-- the tags to be generated -->\n    <link id=\"original-less:test-less-".concat(name, "\" title=\"test-less-").concat(name, "\" rel=\"stylesheet/less\" type=\"text/css\" href=\"/").concat(path.relative(webRoot, fullLessName), "\">\n    <link id=\"expected-less:test-less-").concat(name, "\" rel=\"stylesheet\" type=\"text/css\" href=\"/").concat(path.relative(webRoot, fullCssName), "\">\n    ");
+    }).join(''), helpers.map(function (helper) { return "\n        <script src=\"../../".concat(helper, "\"></script>\n    "); }).join(''), mochaDir, mochaDir, mochaTeamCityDir, chaiDir, spec, less || 'less.min.js');
+};
+//# sourceMappingURL=template.js.map

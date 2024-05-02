@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-no-js-errors-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-no-js-errors-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,yCAAyC,EAAE;IAChD,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js javascript disabled error tests', function() {\n    testLessErrorsInDocument();\n});\n"]}

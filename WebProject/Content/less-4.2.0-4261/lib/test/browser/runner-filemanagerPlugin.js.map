@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-filemanagerPlugin.js","sourceRoot":"","sources":["../../../test/browser/runner-filemanagerPlugin.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,4BAA4B,EAAE;IACnC,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js filemanager Plugin', function() {\n    testLessEqualsInDocument();\n});\n"]}

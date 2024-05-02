@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-rootpath-options.js","sourceRoot":"","sources":["../../../test/browser/runner-rootpath-options.js"],"names":[],"mappings":"AAAA,IAAI,IAAI,GAAG,EAAC,QAAQ,EAAE,CAAC;IACnB,cAAc,EAAE,SAAS,EAAC,CAAC;AAC/B,IAAI,CAAC,QAAQ,GAAG,oBAAoB,CAAC","sourcesContent":["var less = {logLevel: 4,\n    errorReporting: 'console'};\nless.rootpath = 'https://localhost/';\n"]}

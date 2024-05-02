@@ -1,0 +1,61 @@
+﻿@model List<WebProject.Models.Master>
+
+@{
+    ViewBag.Title = "Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.script1 = "/Content/custom/js/script.js";
+}
+
+<h2>Display</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .search-input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        @*<div class="row">
+            <div class="col-md-4">
+                <input type="text" class="form-control search-input" placeholder="Search...">
+            </div>
+        </div>*@
+        <div class="row">
+            <div class="col-md-10">
+                <input type="text" id="input-field" class="form-control search-input" placeholder="Search...">
+            </div>
+            <div class="col-md-2">
+                <select id="myDropdown" class="form-control">
+                   
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped my-data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+
+                            <th>Designation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

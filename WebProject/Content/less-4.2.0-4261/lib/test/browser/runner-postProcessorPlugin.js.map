@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-postProcessorPlugin.js","sourceRoot":"","sources":["../../../test/browser/runner-postProcessorPlugin.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,8BAA8B,EAAE;IACrC,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js postProcessor Plugin', function() {\n    testLessEqualsInDocument();\n});\n"]}

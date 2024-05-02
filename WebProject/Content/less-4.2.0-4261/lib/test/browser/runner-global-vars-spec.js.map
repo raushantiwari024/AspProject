@@ -1,0 +1,1 @@
+{"version":3,"file":"runner-global-vars-spec.js","sourceRoot":"","sources":["../../../test/browser/runner-global-vars-spec.js"],"names":[],"mappings":"AAAA,QAAQ,CAAC,qBAAqB,EAAE;IAC5B,wBAAwB,EAAE,CAAC;AAC/B,CAAC,CAAC,CAAC","sourcesContent":["describe('less.js global vars', function() {\n    testLessEqualsInDocument();\n});\n"]}
